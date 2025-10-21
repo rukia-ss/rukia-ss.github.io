@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitish Kumar's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+    <header>
+        <nav class="container">
+            <h1>Nitish Kumar</h1>
+            <ul>
+                <li><a href="#about">Aspiring software developer seeking a programming internship to learn and apply my skills in the real world. Willing to take on different types of challenges.</a></li>
+                <li><a href="#experience">value dollar, F1, cashier for food stall</a></li>
+                <li><a href="#skills">python, javascript, html, css, node.js, sql, bootstrap, mongodb, linux, bash scripting, git, vs code</a></li>
+                <li><a href="#contact">+65 9673 6275</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Hello, I'm Nitish Kumar</h2>
+                <p class="tagline">Aspiring Software Developer</p>
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h3>About Me</h3>
+                <p>A brief, compelling summary of your professional journey and aspirations. Focus on what makes you unique and what value you bring. (Aim for 3-4 sentences).</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h3>Work Experience</h3>
+                <div class="job-entry">
+                    <h4>retail worker | value dollar</h4>
+                    <span class="dates">14 november 2023- 1 jan 2024</span>
+                    <ul>
+                        <li>have good communication skills to engage customers</li>
+                        <li>able to work independently and in a team</li>
+                    </ul>
+                </div>
+                <div class="job-entry">
+                    <h4> cashier | food stall</h4>
+                    <span class="dates">1 april 2024 - 30 april 2024</span>
+                    <ul>
+                        <li>Provided excellent customer service in a fast-paced environment.</li>
+                        <li>Handled cash transactions accurately and efficiently.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h3>Skills & Expertise</h3>
+                <div class="skill-list">
+                    <div class="skill-item">HTML & CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Python / SQL</div>
+                    <div class="skill-item">git, linux</div>
+                    <div class="skill-item">Agile methodology / scrum framework</div>
+                    </div>
+                <button class="btn secondary-btn details-toggle">Show Interactive Details (CSS Hover)</button>
+                <p class="interactive-info">Hover over the skills above to see a slight emphasis! The button is styled for future JavaScript functionality.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h3>Contact Me</h3>
+                <p>I'm currently seeking new opportunities! Feel free to connect.</p>
+                <div class="contact-links">
+                    <a href="mailto:24022955@myrp.edu.sg" class="contact-link">📧 Email Me</a>
+                    <a href="https://www.linkedin.com/in/nitish-kumar-699b9230b" target="_blank" class="contact-link">🔗 LinkedIn Profile</a>
+                    <a href="https://github.com/rukia-ss" target="_blank" class="contact-link">💻 GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nitish Kumar. Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
