@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nitish Kumar | Portfolio</title>
+    <title>Nitish Kumar | IT Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -11,27 +12,38 @@
 
     <header class="header">
         <nav class="navbar">
-            <a href="#home" class="nav-logo">Nitish Kumar</a>
+            <a href="#home" class="nav-logo">Nitish Kumar<span class="dot">.</span></a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="hero" id="home">
-            <div class="hero-content">
+            <div class="hero-overlay"></div>
+            <div class="hero-content hidden">
                 <h1>Hi, I'm Nitish Kumar</h1>
+                
+                <h2 class="static-subtitle">IT Student & Developer</h2>
+                
                 <p class="hero-subtitle">
-                    Proficient in developing applications using Python, Java, and Node.js, with experience in full-stack development, UI/UX design, and database management.
+                   Versatile Full-Stack Engineer with extensive expertise in Python (Flask) , and Node.js ecosystems. Proven track record of architecting scalable web solutions, and optimizing relational and SQL database performance. Adept at bridging the gap between backend logic and frontend UI/UX, translating complex wireframes into responsive, user-centric interfaces."
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -40,130 +52,170 @@
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about hidden" id="about">
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I am a results-oriented IT student with a strong foundation in full-stack development, database management, and system administration. 
-                            I thrive in collaborative environments, as demonstrated through my hackathon participation and team projects, where I've honed my teamwork and problem-solving skills.
-                            I am fluent in English, a quick learner, and committed to continuously enhancing my technical capabilities.
-                        </p>
-                        <h3>Education</h3>
-                        <p>
-                            <strong>Diploma in Information Technology</strong> (GPA: 2.72)<br>
-                            Republic Polytechnic | 2024 - 2027
+                            Proactive Junior IT Professional with a robust command of Full-Stack Engineering, Relational/NoSQL Database Design, and System Administration. Proven ability to deliver rapid prototypes and scalable solutions under tight deadlines, as evidenced by successful hackathon deployments. A collaborative team player proficient in Agile methodologies, fluent in English, and dedicated to continuous upskilling in emerging technologies
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills hidden" id="skills">
             <div class="container">
                 <h2>My Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Technical Skills</h3>
+                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
                         <ul>
                             <li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li>
                             <li>Node.js</li><li>MySQL</li><li>MongoDB</li><li>Linux (Red Hat)</li>
-                            <li>Shell Scripting</li><li>NFS</li><li>VS Code</li><li>Git</li>
+                            <li>Shell Scripting</li><li>NFS</li><li>Git</li><li>C#</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
+                        <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
                         <ul>
-                            <li>Express.js</li><li>EJS</li><li>Bootstrap</li>
+                            <li>Express.js</li><li>Serverless framework using yaml files to deploy in AWS</li><li>Bootstrap</li><li>React</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Methodologies</h3>
+                        <h3><i class="fas fa-tasks"></i> Methodologies</h3>
                         <ul>
-                            <li>Agile</li><li>RAD</li><li>SDLC</li>
+                            <li>Agile</li><li>RAD</li><li>SDLC</li><li>DevOps</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="projects hidden" id="projects">
             <div class="container">
-                <h2>Projects</h2>
+                <h2>Featured Projects</h2>
                 <div class="projects-grid">
 
                     <div class="project-card">
-                        <h3>StudentListApp</h3>
-                        <p>A full CRUD web application using Express.js and EJS, implementing image uploads and a Bootstrap UI to manage student data. Increased user engagement by 30%.</p>
-                        <div class="project-tags">
-                            <span>Express.js</span>
-                            <span>EJS</span>
-                            <span>Bootstrap</span>
-                            <span>CRUD</span>
+                        <div class="card-header">
+                            <i class="fas fa-user-graduate project-icon"></i>
                         </div>
+                        <div class="card-body">
+                            <h3>Portfolio website</h3>
+                            <p>Based on the code we have built together, here is a short summary of your portfolio website and the technologies used. You can use this description for your GitHub README.md file or your resume.
+
+Project Summary
+This is a responsive, single-page personal portfolio website designed to showcase my profile as an IT student and developer. It features a modern, clean interface that highlights my technical skills, academic background, and key projects. The site includes interactive elements like a dark mode toggle and scroll animations to enhance user experience.
+
+Key Features
+Dynamic Theme Switching: Users can toggle between Light Mode and Dark Mode, with preferences saved in local storage.
+
+Interactive UI: Includes a responsive navigation bar with a hamburger menu for mobile devices and a "Back to Top" button.
+
+Visual Animations: Content sections fade in and slide up as the user scrolls (using the Intersection Observer API).
+
+Structured Layouts:
+
+Timeline: A vertical timeline layout for Education and Experience.
+
+Grid System: Responsive cards for Projects and Skills.</p>
+                            <div class="project-tags">
+                                <span>Html5</span>
+                                <span>CSS3</span>
+                                <span>Javascript(ES6)</span>
+                            </div>
                         </div>
+                    </div>
 
                     <div class="project-card">
-                        <h3>BookStore Web Application</h3>
-                        <p>A full-stack Node.js and Express application with a MySQL database. Implemented end-to-end book inventory management (CRUD), secure user authentication, and role-based access control.</p>
-                        <div class="project-tags">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>MySQL</span>
-                            <span>EJS</span>
-                            <span>Auth</span>
+                        <div class="card-header">
+                            <i class="fas fa-book project-icon"></i>
                         </div>
+                        <div class="card-body">
+                            <h3>BookStore Web App</h3>
+                            <p>Project Overview I engineered a scalable, full-stack web application tailored for inventory management using Node.js and Express on the backend, paired with a MySQL relational database. The application serves as a comprehensive digital storefront and administrative tool, bridging the gap between user-friendly frontend design and complex backend logic.
+
+Security & Authentication Security was a primary focus of this architecture. I implemented secure user authentication by utilizing industry-standard hashing algorithms (bcrypt). This ensures that sensitive user data, specifically passwords, are never stored in plain text. Furthermore, I developed a custom Role-Based Access Control (RBAC) system using middleware. This logic differentiates between 'Admin' and 'Customer' users, automatically restricting access to sensitive administrative routes (like adding or deleting inventory) based on the user's logged-in status.
+
+Database Management The backend interacts with a normalized MySQL database to perform efficient CRUD (Create, Read, Update, Delete) operations. I wrote optimized SQL queries to handle dynamic inventory updates, ensuring real-time data consistency across the application.</p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>MySQL</span>
+                                <span>Auth</span>
+                            </div>
                         </div>
+                    </div>
 
                     <div class="project-card">
-                        <h3>Python Calculator App</h3>
-                        <p>Developed a user-friendly calculator using Python and Tkinter, designing an intuitive GUI. Implemented core mathematical functions and conducted thorough testing.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>GUI</span>
+                        <div class="card-header">
+                            <i class="fas fa-calculator project-icon"></i>
                         </div>
+                        <div class="card-body">
+                            <h3>Python GUI Calculator</h3>
+                            <p>Project Overview I developed a fully functional desktop calculator application using Python and the Tkinter library. The goal was to move beyond command-line scripts and build a user-friendly Graphical User Interface (GUI) that mimics the experience of native operating system tools.
+
+Technical Implementation I utilized Tkinter's Grid Geometry Manager to structure the layout, ensuring buttons were aligned precisely and the application resized gracefully. The core functionality relies on event-driven programming; I bound specific functions to both mouse clicks and keyboard events, allowing users to type numbers naturally or click buttons.
+
+Reliability & Testing To ensure the application was robust, I moved beyond simple arithmetic and implemented a global expression evaluation engine. I integrated comprehensive error handling (try/except blocks) to catch syntax errors and mathematical impossibilities (like dividing by zero) without crashing the app. Finally, I used Python’s unittest framework to automate testing for edge cases, ensuring 100% accuracy in calculations.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Tkinter</span>
+                                <span>GUI</span>
+                            </div>
                         </div>
+                    </div>
 
                 </div>
             </div>
         </section>
 
-        <section class="activities" id="experience">
+        <section class="timeline-section hidden" id="experience">
             <div class="container">
-                <h2>Activities & Experience</h2>
-                <div class="activity-card">
-                    <h3>Polyfintech API Hackathon</h3>
-                    <p>
-                        Collaborated in a team to research, design, and prototype a fintech solution. 
-                        I designed the complete UI/UX in Figma and developed the backend logic using Python. 
-                        Pitched the final prototype to the sponsoring company, demonstrating technical and persuasive communication skills.
-                    </p>
+                <h2>Education & Experience</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h3>Diploma in Information Technology</h3>
+                            <span class="date">2024 - 2027</span>
+                            <p>Republic Polytechnic</p>
+                            <p class="gpa">Current GPA: 2.72</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="content">
+                            <h3>Polyfintech API Hackathon</h3>
+                            <span class="date">Participant</span>
+                            <p>Designed complete UI/UX in Figma and developed backend logic in Python. Pitched final fintech prototype to sponsoring companies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="content">
+                            <h3>Certifications</h3>
+                            <ul class="timeline-list">
+                                <li>Red Hat System Admin I & II (RH124/RH134)</li>
+                                <li>LinkedIn Certs: Python, Java, Node.js</li>
+                                <li>Cisco Cybersecurity Essentials</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-        
-        <section class="certifications" id="certs">
-            <div class="container">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Red Hat System Administration I (RH124)</li>
-                    <li>Red Hat System Administration II (RH134)</li>
-                    <li>LinkedIn Programming Certificates (Python, Java, node.js)</li>
-                    <li>Cisco Cybersecurity Course (Introduction to cybersecurity, networking basics, etc.)</li>
-                </ul>
-            </div>
-        </section>
 
-        <section class="contact" id="contact">
+        <section class="contact hidden" id="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out!</p>
+        <h2>Get In Touch</h2>
+                <p>I'm open to internships and project collaborations. Let's build something great.</p>
                 <div class="contact-links">
-                    <a href="mailto:24022955@myrp.edu.sg" class="btn btn-primary">Email Me</a>
-                    <a href="https://www.linkedin.com/in/nitish-kumar-699b9230b" target="_blank" class="btn btn-secondary">LinkedIn</a>
-                    <a href="https://github.com/rukia-ss" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="mailto:24022955@myrp.edu.sg" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/nitish-kumar-699b9230b" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/rukia-ss" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
         </section>
@@ -171,7 +223,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nitish Kumar. All rights reserved.</p>
+            <p>&copy; 2025 Nitish Kumar. Built with <i class="fas fa-heart" style="color:red;"></i> and Code.</p>
+            
+            <a href="#" class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </div>
     </footer>
 
